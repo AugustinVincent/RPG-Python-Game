@@ -133,9 +133,7 @@ class monster:
             self.elementType = elementType
 
 
-#                      name | level | posX | posY | hp | defense | offense | experienceWon | attacks 
-boss = monster('The boss of the area',100 , 10, 10,  200,20, 20, 10000, monsterHits(['Boss attaque 1', 2], ['Boss attack 2', 3], ['Boss attack 3', 1], ['Boss attack 4', 3]), 'boss')
-elementList.append(boss)
+
 
 def isThereTheBoss() :
   for obj in elementList:
@@ -178,6 +176,11 @@ def monsterPosition() :
   monsterPositions.append(monsterPosY)
   return monsterPositions
 
+
+
+#                      name | level | posX | posY | hp | defense | offense | experienceWon | attacks 
+boss = monster('The boss of the area',100 , 10, 10,  200,20, 20, 10000, monsterHits(['Boss attaque 1', 2], ['Boss attack 2', 3], ['Boss attack 3', 1], ['Boss attack 4', 3]), 'boss')
+elementList.append(boss)
 #                      name | level | posX | posY | hp | defense | offense | experienceWon | attacks 
 #1 - 8
 monsterPos = monsterPosition()
