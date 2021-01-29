@@ -52,12 +52,12 @@ def expUpdate(monster) :
       character.inventory.offense += 1
       character.inventory.defense += 1
       character.health += 10
-      character.maxHealth == round(haracter.maxHealth * 1.5)
+      character.maxHealth == round(character.maxHealth * 1.5)
       if (character.experience > character.experienceNeeded) :
         print('You have level up, you got :')
         print('+ 1 of offense')
         print('+ 1 of defense')
-        print('+',round(haracter.maxHealth * 1.5),' of max health')
+        print('+',round(character.maxHealth * 1.5),' of max health')
         print('+ 10 of health')
         return expUpdate(monster)
 
