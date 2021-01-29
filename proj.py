@@ -100,7 +100,7 @@ mapZoneList.append(fartTown)
 
 def  location() :
   print('')
-  print("Pos X :" ,character.posX, "Pos Y :" ,character.posY , ".", 'The Boss is in ; Pos X :', boss.posX, 'Pos Y : ', boss.posY, '.y')
+  print("Pos X :" ,character.posX, "Pos Y :" ,character.posY , ".", 'The Boss is in ; Pos X :', boss.posX, 'Pos Y : ', boss.posY, '.')
   for obj in mapZoneList :
 
     if (character.posY <= obj.topLimit and character.posY >= obj.bottomLimit
